@@ -1,14 +1,23 @@
 .slider__image-wraper {
   display: flex;
-  column-gap: 2vw;
-  overflow: hidden;
   width: 100%;
-  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.slider__image-block {
+  width: 400%;
+}
+
+.slider__sliders {
+  overflow: hidden;
 }
 
 .slider__image {
-  width: 100%;
+  width: 72vw;
+  max-width: 44em;
+  object-fit: cover;
   border-radius: 2%;
+  transition: all 0.3s ease;
 }
 
 .slider {
@@ -17,12 +26,13 @@
   background: black;
   margin: 0 auto;
   max-width: 48em;
-  width: 100%;
+  width: 80vw;
 }
 
 .slider__description {
   color: aliceblue;
   width: 100%;
+  transition: all 0.3s ease;
 }
 
 input[type="radio"] {
@@ -33,7 +43,7 @@ input[type="radio"] {
   display: flex;
 }
 
-.slider__botton {
+.slider__button {
   border: 0.1em #71abff solid;
   border-radius: 50%;
   width: 0.8em;
@@ -43,13 +53,17 @@ input[type="radio"] {
   transition: all 0.3s ease;
 }
 
-input:checked + .slider__label .slider__botton {
+input:checked + .slider__label .slider__button {
   background-color: transparent;
 }
 
-.slider__label:hover .slider__botton {
+.slider__label:hover .slider__button {
   border-color: aliceblue;
   background-color: aliceblue;
+}
+
+.slider__label:hover {
+  cursor: pointer;
 }
 
 .slider__wraper {
@@ -63,9 +77,42 @@ input:checked + .slider__label .slider__botton {
 }
 
 .slider__container {
-  margin: 4%;
+  margin: 4vw;
 }
 
-.sliider__text-block {
+.slider__text-block {
   overflow: hidden;
+}
+
+#slide1:checked ~ .slider__wraper .slider__label[for="slide1"] .slider__button,
+#slide2:checked ~ .slider__wraper .slider__label[for="slide2"] .slider__button,
+#slide3:checked ~ .slider__wraper .slider__label[for="slide3"] .slider__button,
+#slide4:checked ~ .slider__wraper .slider__label[for="slide4"] .slider__button {
+  background-color: transparent;
+}
+
+#slide1:checked ~ .slider__wraper .slider__description {
+  margin-left: 0;
+}
+#slide2:checked ~ .slider__wraper .slider__description {
+  margin-left: -25%;
+}
+#slide3:checked ~ .slider__wraper .slider__description {
+  margin-left: -50%;
+}
+#slide4:checked ~ .slider__wraper .slider__description {
+  margin-left: -75%;
+}
+
+#slide1:checked ~ .slider__sliders .slider__image-wraper {
+  margin-left: 0;
+}
+#slide2:checked ~ .slider__sliders .slider__image-wraper {
+  margin-left: -25%;
+}
+#slide3:checked ~ .slider__sliders .slider__image-wraper {
+  margin-left: -50%;
+}
+#slide4:checked ~ .slider__sliders .slider__image-wraper {
+  margin-left: -75%;
 }
