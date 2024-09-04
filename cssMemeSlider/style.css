@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   background: black;
-  padding: 2vw;
   margin: 0 auto;
   max-width: 48em;
   width: 100%;
@@ -55,12 +54,18 @@ input:checked + .slider__label .slider__botton {
 
 .slider__wraper {
   display: flex;
+  align-items: center;
 }
 
 .slider__description-wraper {
   display: flex;
-  overflow: hidden;
+  width: 400%;
 }
 
 .slider__container {
+  margin: 4%;
+}
+
+.sliider__text-block {
+  overflow: hidden;
 }
