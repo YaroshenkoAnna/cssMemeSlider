@@ -9,31 +9,42 @@
   </head>
   <body>
     <div class="slider">
-      <input type="radio" name="point" id="slide1" checked />
-      <input type="radio" name="point" id="slide2" />
-      <input type="radio" name="point" id="slide3" />
-      <input type="radio" name="point" id="slide4" />
-      <div class="slider__image-wraper">
-        <img src="images/slider1.jpg" alt="Meme" class="slider__image" />
-        <img src="images/slider2.jpg" alt="Meme" class="slider__image" />
-        <img src="images/slider3.jpg" alt="Meme" class="slider__image" />
-        <img src="images/slider4.jpg" alt="Meme" class="slider__image" />
-      </div>
-      <div class="slider__description-wraper">
-        <p class="slider__description">
-          Перед осуществлением планов убедись в наличии ресурсов
-        </p>
-        <p class="slider__description">
-          Все начинается со слов: Я знаю короткую дорогу!
-        </p>
-        <p class="slider__description">День 246. Помидоров до сих пор нет.</p>
-        <p class="slider__description">Правильный выбор</p>
-      </div>
-      <div class="slider__controls">
-        <label for="slide1" class="slider__bottom"></label>
-        <label for="slide2" class="slider__bottom"></label>
-        <label for="slide3" class="slider__bottom"></label>
-        <label for="slide4" class="slider__bottom"></label>
+      <div class="slider__container">
+        <div class="slider__image-wraper">
+          <img src="images/slider1.jpg" alt="Meme" class="slider__image" />
+          <img src="images/slider2.jpg" alt="Meme" class="slider__image" />
+          <img src="images/slider3.jpg" alt="Meme" class="slider__image" />
+          <img src="images/slider4.jpg" alt="Meme" class="slider__image" />
+        </div>
+        <div class="slider__wraper">
+          <div class="slider__description-wraper">
+            <p class="slider__description">
+              Перед осуществлением планов убедись в наличии ресурсов
+            </p>
+            <p class="slider__description">
+              Все начинается со слов: Я знаю короткую дорогу!
+            </p>
+            <p class="slider__description">
+              День 246. Помидоров до сих пор нет.
+            </p>
+            <p class="slider__description">Правильный выбор</p>
+          </div>
+          <div class="slider__controls">
+            <input type="radio" name="point" id="slide1" checked />
+            <label for="slide1" class="slider__label" checked>
+              <div class="slider__botton"></div></label
+            ><input type="radio" name="point" id="slide2" />
+            <label for="slide2" class="slider__label"
+              ><div class="slider__botton"></div></label
+            ><input type="radio" name="point" id="slide3" />
+            <label for="slide3" class="slider__label"
+              ><div class="slider__botton"></div></label
+            ><input type="radio" name="point" id="slide4" />
+            <label for="slide4" class="slider__label"
+              ><div class="slider__botton"></div
+            ></label>
+          </div>
+        </div>
       </div>
     </div>
   </body>
