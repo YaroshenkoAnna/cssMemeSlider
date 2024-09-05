@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Meme Slider</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
   </head>
   <body>
     <div class="slider">
@@ -15,7 +16,7 @@
         <input type="radio" name="point" id="slide3" />
         <input type="radio" name="point" id="slide4" />
         <div class="slider__sliders">
-         <div class="slider__image-block">
+          <div class="slider__image-block">
             <div class="slider__image-wraper">
               <img src="images/slider1.jpg" alt="Meme" class="slider__image" />
               <img src="images/slider2.jpg" alt="Meme" class="slider__image" />
@@ -24,20 +25,21 @@
             </div>
           </div>
         </div>
-
         <div class="slider__wraper">
           <div class="slider__text-block">
             <div class="slider__description-wraper">
-              <p class="slider__description">
-                Перед осуществлением планов убедись в наличии ресурсов
-              </p>
-              <p class="slider__description">
-                Все начинается со слов: Я знаю короткую дорогу!
-              </p>
-              <p class="slider__description">
-                День 246. Помидоров до сих пор нет.
-              </p>
-              <p class="slider__description">Правильный выбор</p>
+              <div class="slider__descriptions">
+                <p class="slider__description">
+                  Перед осуществлением планов убедись в наличии ресурсов
+                </p>
+                <p class="slider__description">
+                  Все начинается со слов: Я знаю короткую дорогу!
+                </p>
+                <p class="slider__description">
+                  День 246. Помидоров до сих пор нет.
+                </p>
+                <p class="slider__description">Мой выбор</p>
+              </div>
             </div>
           </div>
 
@@ -59,14 +61,5 @@
         </div>
       </div>
     </div>
-
-    <!-- <input type="radio" name="point" id="sl12" checked />
-    <input type="radio" name="point" id="sl13" />
-    <div class="class1">fdfhfghfds</div>
-    <div class="class4">gfkldxys</div>
-    <div class="class2">
-      <label for="sl12" class="class3">gvbnklfds</label>
-      <label for="sl13" class="class5">gvbnklfds</label>
-    </div> -->
   </body>
 </html>
