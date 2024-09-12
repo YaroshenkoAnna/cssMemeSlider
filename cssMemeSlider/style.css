@@ -141,6 +141,10 @@ input:checked + .slider__label .slider__button {
 }
 
 @media (max-width: 620px) {
+  .page {
+    padding-top: 0;
+  }
+
   .slider__wraper {
     flex-direction: column-reverse;
     align-items: center;
