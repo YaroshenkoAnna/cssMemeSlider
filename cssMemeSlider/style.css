@@ -1,3 +1,15 @@
+.page {
+  background: radial-gradient(
+    circle,
+    rgba(55, 51, 129, 1) 0%,
+    rgba(38, 38, 175, 0.9570421918767507) 50%,
+    rgba(24, 173, 203, 1) 100%
+  );
+  min-height: 100vh;
+  padding-top: 2vh;
+  box-sizing: border-box;
+}
+
 .slider__image-wraper {
   display: flex;
   width: 100%;
@@ -49,7 +61,7 @@ input[type="radio"] {
 }
 
 .slider__button {
-  border: 0.1em #71abff solid;
+  border: 1px #71abff solid;
   border-radius: 50%;
   width: 0.8em;
   height: 0.8em;
@@ -129,6 +141,10 @@ input:checked + .slider__label .slider__button {
 }
 
 @media (max-width: 620px) {
+  .page {
+    padding-top: 0;
+  }
+
   .slider__wraper {
     flex-direction: column-reverse;
     align-items: center;

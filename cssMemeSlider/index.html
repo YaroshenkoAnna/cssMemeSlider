@@ -4,59 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Meme Slider</title>
+    <title>CSSMemeSlider</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
   <body>
-    <div class="slider">
-      <div class="slider__container">
-        <input type="radio" name="point" id="slide1" checked />
-        <input type="radio" name="point" id="slide2" />
-        <input type="radio" name="point" id="slide3" />
-        <input type="radio" name="point" id="slide4" />
-        <div class="slider__sliders">
-          <div class="slider__image-block">
-            <div class="slider__image-wraper">
-              <img src="images/slider1.jpg" alt="Meme" class="slider__image" />
-              <img src="images/slider2.jpg" alt="Meme" class="slider__image" />
-              <img src="images/slider3.jpg" alt="Meme" class="slider__image" />
-              <img src="images/slider4.jpg" alt="Meme" class="slider__image" />
-            </div>
-          </div>
-        </div>
-        <div class="slider__wraper">
-          <div class="slider__text-block">
-            <div class="slider__description-wraper">
-              <div class="slider__descriptions">
-                <p class="slider__description">
-                  Перед осуществлением планов убедись в наличии ресурсов
-                </p>
-                <p class="slider__description">
-                  Все начинается со слов: Я знаю короткую дорогу!
-                </p>
-                <p class="slider__description">
-                  День 246. Помидоров до сих пор нет.
-                </p>
-                <p class="slider__description">Мой выбор</p>
+    <div class="page">
+      <div class="slider">
+        <div class="slider__container">
+          <input type="radio" name="point" id="slide1" checked />
+          <input type="radio" name="point" id="slide2" />
+          <input type="radio" name="point" id="slide3" />
+          <input type="radio" name="point" id="slide4" />
+          <div class="slider__sliders">
+            <div class="slider__image-block">
+              <div class="slider__image-wraper">
+                <img
+                  src="images/slider1.jpg"
+                  alt="Meme"
+                  class="slider__image"
+                />
+                <img
+                  src="images/slider2.jpg"
+                  alt="Meme"
+                  class="slider__image"
+                />
+                <img
+                  src="images/slider3.jpg"
+                  alt="Meme"
+                  class="slider__image"
+                />
+                <img
+                  src="images/slider4.jpg"
+                  alt="Meme"
+                  class="slider__image"
+                />
               </div>
             </div>
           </div>
-
-          <div class="slider__controls">
-            <label for="slide1" class="slider__label">
-              <div class="slider__button"></div
-            ></label>
-            <label for="slide2" class="slider__label"
-              ><div class="slider__button"></div
-            ></label>
-
-            <label for="slide3" class="slider__label"
-              ><div class="slider__button"></div
-            ></label>
-            <label for="slide4" class="slider__label"
-              ><div class="slider__button"></div
-            ></label>
+          <div class="slider__wraper">
+            <div class="slider__text-block">
+              <div class="slider__description-wraper">
+                <div class="slider__descriptions">
+                  <p class="slider__description">
+                    Перед осуществлением планов убедись в наличии ресурсов
+                  </p>
+                  <p class="slider__description">
+                    Все начинается со слов: Я знаю короткую дорогу!
+                  </p>
+                  <p class="slider__description">
+                    День 246. Помидоров до сих пор нет.
+                  </p>
+                  <p class="slider__description">Мой выбор</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <label for="slide1" class="slider__label">
+                <div class="slider__button"></div
+              ></label>
+              <label for="slide2" class="slider__label"
+                ><div class="slider__button"></div
+              ></label>
+              <label for="slide3" class="slider__label"
+                ><div class="slider__button"></div
+              ></label>
+              <label for="slide4" class="slider__label"
+                ><div class="slider__button"></div
+              ></label>
+            </div>
           </div>
         </div>
       </div>
